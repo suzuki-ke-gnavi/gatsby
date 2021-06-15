@@ -6,7 +6,7 @@ const Page: React.FC = () => (
   <Layout>
     <h1>Home</h1>
     <p>Hello, GatsbyJS!</p>
-    <Link to="/about">About this blog</Link>
+    <Link to="/aboutabout">About this blog</Link>
   </Layout>
 );
 export default Page;

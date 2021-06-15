@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
       <p>&copy; {data.site?.siteMetadata?.author ?? ''}</p>
       <ul>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/aboutabout">About</Link>
         </li>
         <li>
           <a href={`mailto:${data.site?.siteMetadata?.email ?? ''}`}>Contact</a>

@@ -26,9 +26,9 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ap-northeast-1
-    - name: Deploy
+    - name: s3 ls
       # run: aws s3 ls ${{ secrets.AWS_S3_BUCKET_NAME }}
-      run: aws s3 sync --exact-timestamp test/ ${{ secrets.AWS_S3_BUCKET_NAME }}
+      run: aws s3 sync --exact-timestamp public/aboutabout/ ${{ secrets.AWS_S3_BUCKET_NAME }}/test
       # run: aws s3 sync --exact-timestamp --delete public/about/index.html ${{ secrets.AWS_S3_BUCKET_NAME }}
     # - name: Invalidate CloudFront cache
     #   run: aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_DISTRIBUTION_ID }} --paths '/*'

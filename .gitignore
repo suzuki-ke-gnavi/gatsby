@@ -9,3 +9,6 @@ public/
 types/graphql-types.d.ts
 
 .DS_Store
+
+# env
+.env.*

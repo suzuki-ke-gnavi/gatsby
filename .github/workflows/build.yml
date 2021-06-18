@@ -1,13 +1,18 @@
 name: Build and Deploy
 
-# on: [ workflow_dispatch ]
+# 手動Deploy
+on: [ workflow_dispatch ]
+
+# main pushで自動Deploy
 # on:
 #   push:
 #     branches:
 #       - main
-on:
-  repository_dispatch:
-    types: [update]
+
+# MicroCMS Webhook
+# on:
+#   repository_dispatch:
+#     types: [update]
 
 jobs:
   build:

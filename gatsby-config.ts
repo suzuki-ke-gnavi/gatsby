@@ -23,7 +23,7 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-source-microcms',
       options: {
-        apiKey: process.env.X_API_KEY,
+        apiKey: process.env.MICROCMS_API_KEY,
         serviceId: process.env.SERVICE_ID,
         apis: [
           {

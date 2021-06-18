@@ -16,9 +16,6 @@ export const Header: React.FC = () => {
   return (
     <header>
       <h1>
-        <p>{process.env.GATSBY_API_URL}</p>
-        <p>{process.env.X_API_KEY}</p>
-        <p>{process.env.SERVICE_ID}</p>
         <Link to="/">{data.site?.siteMetadata?.title ?? ''}</Link>
       </h1>
     </header>
